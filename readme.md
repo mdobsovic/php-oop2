@@ -10,5 +10,5 @@ Inštalácia
 
 Inštalácia databázy
 ------------
-- Importovať súbor database-setup.sql
+- Importovať súbor `database-setup.sql`
 - Nastaviť správne údaje na pripojenie v súbore `app/config/config.local.neon`
