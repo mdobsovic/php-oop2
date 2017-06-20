@@ -1,0 +1,10 @@
+{block content}
+<h1 n:block="title">Úvodná stránka</h1>
+<a n:href="Clanok:pridat">Pridať článok</a>
+<hr>
+{foreach $clanky as $clanok}
+    <h2>{$clanok->nadpis}</h2>
+    Autor: {$clanok->ref('autor')->meno} {$clanok->ref('autor')->priezvisko}<br>
+    Perex: {$clanok->perex}<br>
+    <a n:href="Clanok:detail $clanok->slug">Detail článku</a>
+{/foreach}

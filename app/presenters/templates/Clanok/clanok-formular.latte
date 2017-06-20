@@ -1,0 +1,8 @@
+{block content}
+
+    Akcia: {$presenter->action}<br>
+    Presenter: {$presenter->name}<br>
+    Odkaz na pridanie článku: {link Clanok:pridat}
+
+    <h1 n:block="title">{if $presenter->action === 'pridat'}Pridať{else}Upraviť{/if} článok</h1>
+    {control pridatForm}

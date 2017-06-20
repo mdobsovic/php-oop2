@@ -1,0 +1,11 @@
+{block content}
+    <h1 n:block="title">{$clanok->nadpis}</h1>
+<strong>Perex: </strong> {$clanok->perex}
+<p>{$clanok->obsah}</p>
+<hr>
+Autor: {$clanok->ref('autor')->meno} {$clanok->ref('autor')->priezvisko}<br>
+Dátum pridania: {$clanok->datum|date:'d.m.Y H:i'}
+<hr>
+<a n:href="Homepage:default">Späť na úvod</a> |
+<a n:href="Clanok:upravit $clanok->id">Upraviť</a> |
+<a n:href="Clanok:zmazat $clanok->id">Zmazať</a>
